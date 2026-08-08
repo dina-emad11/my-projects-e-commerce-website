@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration Page</title>
+    </head>
+    <body>
+        <from action="#" method="Post" enctype="Multipart/form-data">
+            <input type="hidden" name="userId" value="1234456">
+
+            <!--first name-->
+            <div>
+                <label for="firstname">First Name (Required):</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <br>
+            <!--Last name-->
+            <div>
+                <label for="lastName">last Name (Required):</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <br>
+            <!--Email-->
+            <div>
+                <label for="email">Email (Required):</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <!--Password-->
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <br>
+            <!--RepeatPassword-->
+            <div>
+                <label for="repeatPassword">RepeatPassword:</label>
+                <input type="password" id="repeatPassword" name="repeatPassword">
+            </div>
+            <br>
+            <!--Birth Date-->
+            <div>
+                <label for="birthDate">Birth Date:</label>
+                <input type="data" id="birthDate" name="birthDate">
+            </div>
+            <br>
+            <!--User Picture-->
+            <div>
+                <label for="userPicture">User Picture:</label>
+                <input type="file" id="userPicture" name="userPicture" accept="image/*">
+            </div>
+            <br>
+            <!--Gender-->
+            <fieldset>
+                <legend>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </legend>
+            </fieldset>
+            <br>
+            <!--Interests-->
+            <fieldset>
+               <legend>Interests</legend>
+               <input type="checkbox" id="programming" name="interests" value="programming">
+               <label for="programming">Programming</label>
+        
+               <input type="checkbox" id="reading" name="interests" value="reading">
+               <label for="reading">Reading</label>
+        
+               <input type="checkbox" id="art" name="interests" value="art">
+               <label for="art">Art</label>
+            </fieldset>
+            <br>
+            <!--Faculty-->
+            <div>
+                <label for="faculty">Faculty:</label>
+                <select id="faculty" name="faculty">
+                    <option value="">-- Select your Faculty --</option>
+                    <option value="computers_ai">Computers and Artificial Intelligence</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="science">Science</option>
+                    <option value="medicine">Medicine</option>
+                </select>
+            </div>
+            <br>
+            <!--About you-->
+            <div>
+                <label for="aboutYou">About you:</label><br>
+                <textarea id="aboutYou" name="aboutYou" rows="4" cols="50" placeholder="Write something about yourself..."></textarea>
+            </div>
+            <br>
+            <!--I agreed to-->
+            <div>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">
+                I agreed to <a href="terms.html" target="_blank">terms and conditions</a>
+                </label>
+            <form>
+            <br><br>
+            <!--Submit and Reset-->
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </body>
+</html>
