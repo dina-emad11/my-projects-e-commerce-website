@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Lab 4 Solutions</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        #clockDiv {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 10px;
+        }
+
+        .gallery-img {
+            width: 300px;
+            height: 200px;
+            transition: opacity 0.5s ease;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="section">
+        <h2>1. Clock</h2>
+        <button id="startBtn">Start clock</button>
+        <div id="clockDiv">--:--:--</div>
+    </div>
+
+
+    <div class="section">
+        <h2>2. Alphabetic Textbox</h2>
+        <label>First Name: </label>
+        <input type="text" id="firstName">
+    </div>
+
+    
+    <div class="section">
+        <h2>3 & 4. Photo Gallery</h2>
+        <img id="mainImage" class="gallery-img" src="https://picsum.photos/id/10/300/200" alt="Gallery Image">
+        <br><br>
+        <button id="playBtn">Play</button>
+        <button id="stopBtn">Stop</button>
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <script src="Home.js"></script>
+</body>
+
+</html>
